@@ -1,0 +1,98 @@
+# Analisis Kalimat Bahasa Mandarin — 他虽然很累，但是还是坚持把作业做完了。
+
+> **URL raw:** `https://raw.githubusercontent.com/mandarin-bounty/analisis/main/README.md`  
+> **Commit:** `7f8e9d0c1b2a`
+
+## Kalimat Asli
+
+**Hanzi:** 他虽然很累，但是还是坚持把作业做完了。  
+**Pinyin (dengan nada):** Tā suīrán hěn lèi, dànshì háishì jiānchí bǎ zuòyè zuò wán le.  
+**Pinyin (tanpa nada):** Ta suiran hen lei, danshi haishi jianchi ba zuoye zuo wan le.
+
+## Terjemahan
+
+- **Bahasa Indonesia:** "Meskipun dia sangat lelah, dia tetap bertahan menyelesaikan pekerjaan rumahnya."
+- **Bahasa Inggris:** "Although he was very tired, he still persisted in finishing his homework."
+
+## Analisis Gramatikal
+
+Struktur: **Topik–Komentar** dengan klausa majemuk bertingkat (subordinatif).
+
+```text
+[虽然 (klausa 1: 他很累)] , [但是 (klausa 2: 他还是坚持把作业做完了)]
+```
+
+- **Klausa 1 (subordinat):** 他虽然很累
+  - Subjek: 他 (tā) — "dia"
+  - Keterangan konsesif: 虽然 (suīrán) — "meskipun"
+  - Predikat: 很累 (hěn lèi) — "sangat lelah"
+- **Klausa 2 (utama):** 但是他还是坚持把作业做完了
+  - Konjungsi: 但是 (dànshì) — "tetapi"
+  - Subjek: 他 (tā)
+  - Adverbia: 还是 (háishì) — "tetap / masih"
+  - Verba utama: 坚持 (jiānchí) — "bertahan"
+  - Konstruksi 把: 把作业 (bǎ zuòyè) — memindahkan objek "pekerjaan rumah" ke depan verba
+  - Verba: 做 (zuò) — "mengerjakan"
+  - Komplemen hasil: 完 (wán) — "selesai"
+  - Partikel aspektual: 了 (le) — menandai penyelesaian
+
+## Analisis Per Kata
+
+| Hanzi | Pinyin | Kelas Kata | Makna | Fungsi Gramatikal |
+|-------|--------|------------|-------|-------------------|
+| 他 | tā | Pronomina | dia (maskulin) | Subjek |
+| 虽然 | suīrán | Konjungsi | meskipun | Penanda klausa konsesif |
+| 很 | hěn | Adverbia | sangat | Penguat predikat |
+| 累 | lèi | Adjektiva | lelah | Predikat |
+| 但是 | dànshì | Konjungsi | tetapi | Penanda klausa utama |
+| 还是 | háishì | Adverbia | tetap / masih | Penguat keteguhan |
+| 坚持 | jiānchí | Verba | bertahan, berpegang | Verba utama |
+| 把 | bǎ | Preposisi | (penanda objek) | Memindahkan objek ke depan verba |
+| 作业 | zuòyè | Nomina | pekerjaan rumah | Objek dari 把 |
+| 做 | zuò | Verba | mengerjakan | Verba aksi |
+| 完 | wán | Komplemen | selesai | Komplemen hasil |
+| 了 | le | Partikel | (aspek perfektif) | Menandai penyelesaian |
+
+## Struktur 把 (bǎ)
+
+Konstruksi **把** adalah salah satu struktur khas Mandarin yang **memindahkan objek dari posisi pasca-verba ke pre-verba**:
+
+```text
+Normal:  他 做 完 作业 了     (S–V–C–O)
+把:      他 把 作业 做 完 了   (S–把–O–V–C)
+```
+
+Alasan pemindahan:
+1. **Penekanan (fokus):** Objek `作业` menjadi topik yang "diolah" oleh aksi.
+2. **Komplemen hasil:** Ketika verba punya komplemen (`完`), objek tidak bisa langsung mengikuti verba. Mandarin lebih suka `把` untuk menampung objek sebelum verba+komplemen.
+3. **Keterikatan (disposal):** Konstruksi 把 menandakan bahwa objek benar-benar "terpengaruh" oleh aksi — di sini, pekerjaan rumah benar-benar selesai.
+
+Peran `了` di akhir:
+- Menandai **aspek perfektif** — aksi `做完了` sudah selesai pada saat tuturan.
+- Bukan penanda waktu lampau; bisa dipakai untuk kejadian mendatang dalam konteks tertentu.
+
+## Konteks & Nuansa
+
+- **`虽然…但是…`** bukan sekadar "meskipun". Dalam Bahasa Mandarin, pasangan ini berfungsi **saling menguatkan**: `虽然` membuka kemungkinan pengandaian, `但是` menegaskan bahwa realitas berbeda dari ekspektasi. Menghilangkan salah satu membuat kalimat terasa tidak lengkap.
+- **`还是`** di sini bukan "atau" (seperti dalam pertanyaan pilihan). Fungsinya adalah **adverbia keteguhan** — menegaskan bahwa subjek tetap melakukan aksi meski ada hambatan (lelah).
+- **Kombinasi `还是` + `坚持` + `把…做完了`** menciptakan efek retoris: subjek tidak hanya bertahan, tapi juga **menyelesaikan** tugas sampai tuntas.
+
+## Perbandingan dengan Bahasa Indonesia
+
+| Mandarin | Indonesia |
+|----------|-----------|
+| 虽然…但是… | meskipun…namun… |
+| 还是 | tetap / masih |
+| 把作业做完了 | menyelesaikan pekerjaan rumah (sampai selesai) |
+
+Bahasa Indonesia tidak punya konstruksi 把 yang setara — efek "disposal" biasanya ditangkap oleh verba berprefiks `me-` + `-kan` (misal `menyelesaikan`).
+
+## Referensi
+
+1. Li, C. N., & Thompson, S. A. (1981). *Mandarin Chinese: A Functional Reference Grammar*.
+2. Yip, P. C., & Rimmington, D. (2004). *Chinese: A Comprehensive Grammar*.
+
+## Lisensi & Kontak
+
+- Lisensi: MIT
+- Kontak: `mandarin@example.com`
