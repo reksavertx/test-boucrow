@@ -1,0 +1,40 @@
+# Vulnerability Summary — WebFotoLDK2026
+
+**Review type:** Static review of the public GitHub repository  
+**Repository:** [reksavertx/WebFotoLDK2026](https://github.com/reksavertx/WebFotoLDK2026)  
+**Review scope:** Public status API and session-secret configuration  
+**Live testing performed:** No
+
+## 1. Public exposure of student information
+
+- **Severity:** Medium — privacy/data exposure
+- **Affected endpoint:** `GET /api/status`
+- **Affected file:** `CPANEL/backend/src/app/api/status/route.ts` (around lines 39–47)
+- **Authentication:** Not required
+
+### Description
+
+The public status endpoint returns individual records. In list mode, those records include each student's name, class, attendance number, and photo-submission status. In free mode, the response includes submitters' names and submission status. Anyone able to reach the endpoint can retrieve this information.
+
+This may expose student identities and reveal who has or has not submitted a photo. The public response is more detailed than an aggregate-only status summary.
+
+### Recommended remediation
+
+Return only aggregate totals and progress from the public endpoint. Move per-student status details behind admin authentication. If individual progress is intentionally public, first limit the response to fields approved for public disclosure.
+
+## 2. Fallback admin session secret
+
+- **Severity:** Configuration-dependent risk
+- **Affected file:** `CPANEL/backend/src/lib/auth.ts` (line 8)
+
+### Description
+
+If `SESSION_SECRET` is not configured, the application signs and verifies admin session tokens using the hard-coded fallback `development-secret-change-me`. Because this value is present in source, an installation running without an explicit secret may allow attackers to forge admin session tokens.
+
+### Recommended remediation
+
+Require `SESSION_SECRET` to be explicitly configured with a strong, randomly generated value, and fail application startup when it is missing or too weak. Rotate the secret if an affected deployment may have used the fallback.
+
+## Review limitations
+
+These findings are based on static inspection of the public repository. No deployed instance, production configuration, or live endpoint was tested. Confirm actual exposure and secret configuration in the deployment environment.
