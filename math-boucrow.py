@@ -26,7 +26,7 @@ Digit lengkap **12345 digit** disimpan di file terpisah:
 Hash SHA-256 dari string 12345 digit tersebut:
 
 ```
-<sha256-hash-di-generate-oleh-script>
+8d6388a7bd94c397e002165efc7b29dbcbf49fe8c82560ab8ebb50451a6364bb
 ```
 
 > **Catatan:** Hash di atas dihasilkan oleh script di bawah. Juri dapat menjalankan script untuk memverifikasi kecocokan.
